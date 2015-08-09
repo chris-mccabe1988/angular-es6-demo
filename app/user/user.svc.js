@@ -24,11 +24,11 @@ class UserService {
   static factory($http){
     return new UserService($http);
   }
-};
+}
 
 // In order to preserve dependency annotationsfor minification, we need to set
 // the $inject property of the factory function
 UserService.factory.$inject = ['$http'];
 
 // Export the service so it can be imported in other files
-export { UserService }
+export { UserService };

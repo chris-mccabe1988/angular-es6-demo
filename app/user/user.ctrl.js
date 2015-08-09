@@ -29,4 +29,4 @@ class UserCtrl {
 // Just like the service, we need to set the $inject property for minification
 UserCtrl.$inject = ['UserService'];
 
-export { UserCtrl }
+export { UserCtrl };
