@@ -1,3 +1,6 @@
 import angular from 'angular';
-
-console.log(angular.version);
+import * as UserModule from './user/user.module';
+ 
+angular.module('myES6App',[])
+  .factory('UserService', UserModule.service)
+  .controller('UserController', UserModule.controller);
