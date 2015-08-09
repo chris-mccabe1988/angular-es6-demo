@@ -11,6 +11,18 @@
     </script>
   </head>
   <body>
-    <h1>Lets bring AngularJS 1.x up to speed!</h1>
+    <div ng-app="myES6App">
+      <h1>Lets bring AngularJS 1.x up to speed!</h1>
+
+      <!-- This could be in a separate template -->
+      <div ng-controller="UserController as u">
+        <h2>List of top Github users!</h2>
+        <ul ng-repeat="usr in u.users">
+          <li>
+            {{usr.id}}. {{usr.login}} <img src="{{usr.avatar_url}}" height="50px">
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
